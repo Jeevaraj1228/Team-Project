@@ -1,0 +1,78 @@
+<!-- Project: Campus Connect Web Portal -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">PhotoGrapher Booking</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#scholarships">Booking</a></li>
+                <li><a href="#login">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to PhotoGraphy World</h1>
+            <p>Booking your own PhotoGrapher</p>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="section">
+        <h2>Upcoming Events</h2>
+        <div class="event-list">
+            <!-- Dynamic Content Populated Here -->
+        </div>
+    </section>
+
+    <!-- Scholarships Section -->
+    <section id="scholarships" class="section">
+        <h2>Available Scholarships</h2>
+        <div class="scholarship-list">
+            <!-- Dynamic Content Populated Here -->
+        </div>
+    </section>
+
+    <!-- Login Section -->
+    <section id="login" class="section">
+        <h2>Login Portal</h2>
+        <div class="login-container">
+            <form action="backend/login.php" method="POST">
+                <label for="role">Role:</label>
+                <select name="role" id="role">
+                    <option value="admin">Admin</option>
+                    <option value="faculty">Faculty</option>
+                    <option value="student">Student</option>
+                </select>
+
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Campus Connect. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
